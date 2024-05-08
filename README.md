@@ -1,10 +1,10 @@
 # 4.Execution_of_NetworkCommands
-## NAME : DHARANISH MS
-## REGISTER NO : 212223240027
+# NAME : DHARANISH MS
+# REGISTER NO : 212223240027
 
-# AIM :Use of Network commands in Real Time environment
-# Software : Command Prompt And Network Protocol Analyzer
-# Procedure: To do this EXPERIMENT- follows these steps:
+## AIM :Use of Network commands in Real Time environment
+## Software : Command Prompt And Network Protocol Analyzer
+## Procedure: To do this EXPERIMENT- follows these steps:
 <BR>
 In this EXPERIMENT- students have to understand basic networking commands e.g cpdump, netstat, ifconfig, nslookup ,traceroute and also Capture ping and traceroute PDUs using a network protocol analyzer 
 <BR>
@@ -28,8 +28,8 @@ This commands includes
 <BR>
 • Other IP Commands e.g. show ip route etc.
 
-# PROGRAM
-## CLIENT
+## PROGRAM
+### CLIENT
 ```
 import socket 
 from pythonping import ping 
@@ -44,7 +44,7 @@ while True:
     except KeyError: 
         c.send("Not Found".encode())
 ```
-## SERVER
+### SERVER
 ```
 import socket 
 s=socket.socket() 
@@ -54,22 +54,22 @@ while True:
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
 ```
-## TRACEROUTE COMMAND
+### TRACEROUTE COMMAND
 ```
 from scapy.all import*     
 target = ["www.google.com"]     
 result, unans = traceroute(target,maxttl=32) 
 print(result,unans)
 ```
-# Output
-## CLIENT
+## Output
+### CLIENT
 ![CLIENT 4](https://github.com/MSDharanish-23011819/4.Execution_of_NetworkCommends/assets/147139454/306ea4fc-d1fe-44a7-89cd-434ef18c6c6a)
 
-## SERVER
+### SERVER
 ![SERVER 4](https://github.com/MSDharanish-23011819/4.Execution_of_NetworkCommends/assets/147139454/dea572c4-6ca6-4717-bba3-4852257883dd)
 
-## TRACEROUTE COMMAND
+### TRACEROUTE COMMAND
 ![TRACE 4](https://github.com/MSDharanish-23011819/4.Execution_of_NetworkCommends/assets/147139454/c2f3e985-7723-4eff-bf71-918c72e9a98f)
 
-# Result
+## Result
 Thus Execution of Network commands Performed. 
